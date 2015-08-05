@@ -4,10 +4,13 @@ public class InheritanceTest {
         Animal animal = new Animal("scary animal");
         System.out.println(animal.getType());
 
-        Dog dog = new Dog("Dog", "Tuzik", "Chihuahua");
+        Animal dog = new Dog("Dog", "Tuzik", "Chihuahua");
+        dog.move();
+        dog.
+       /* Dog dog = new Dog("Dog", "Tuzik", "Chihuahua");
         System.out.println(dog.getType());
         dog.move();
         animal.move();
-        animal.move("Cats");
+        animal.move("Cats");*/
     }
 }

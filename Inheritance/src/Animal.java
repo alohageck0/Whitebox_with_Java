@@ -16,6 +16,6 @@ public class Animal {
     }
 
     public void move(String animalName) {
-        System.out.println(animalName + " can move");
+        System.out.println(animalName + "  can move");
     }
 }
