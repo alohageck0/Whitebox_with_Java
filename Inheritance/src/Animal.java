@@ -10,4 +10,8 @@ public class Animal {
     public String getType() {
         return type;
     }
+
+    public void move(){
+        System.out.println("Animals can move");
+    }
 }

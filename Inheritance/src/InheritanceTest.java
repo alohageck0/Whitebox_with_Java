@@ -6,6 +6,7 @@ public class InheritanceTest {
 
         Dog dog = new Dog("Dog", "Tuzik", "Chihuahua");
         System.out.println(dog.getType());
-        dog.Move();
+        dog.move();
+        animal.move();
     }
 }

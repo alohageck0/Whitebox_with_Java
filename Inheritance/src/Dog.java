@@ -9,7 +9,7 @@ public class Dog extends Animal {
         breed = aBreed;
     }
 
-    public void Move() {
+    public void move() {
         System.out.println("Dogs can run");
     }
 }
