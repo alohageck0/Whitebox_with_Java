@@ -6,7 +6,7 @@ public class InheritanceTest {
 
         Animal dog = new Dog("Dog", "Tuzik", "Chihuahua");
         dog.move();
-        dog.
+//        dog.bark();
        /* Dog dog = new Dog("Dog", "Tuzik", "Chihuahua");
         System.out.println(dog.getType());
         dog.move();
