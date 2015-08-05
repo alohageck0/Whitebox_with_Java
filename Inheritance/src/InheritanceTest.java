@@ -8,5 +8,6 @@ public class InheritanceTest {
         System.out.println(dog.getType());
         dog.move();
         animal.move();
+        animal.move("Cats");
     }
 }

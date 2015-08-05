@@ -11,7 +11,11 @@ public class Animal {
         return type;
     }
 
-    public void move(){
+    public void move() {
         System.out.println("Animals can move");
+    }
+
+    public void move(String animalName) {
+        System.out.println(animalName + " can move");
     }
 }
