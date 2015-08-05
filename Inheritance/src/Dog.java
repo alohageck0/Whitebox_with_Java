@@ -8,4 +8,8 @@ public class Dog extends Animal {
         name = aName;
         breed = aBreed;
     }
+
+    public void Move() {
+        System.out.println("Dogs can run");
+    }
 }
