@@ -24,6 +24,7 @@ public class Ractangle extends Point {
 
     public String allCoordsString() {
         String coords = coord1.getCoords() + ',' + coord2.getCoords() + ',' + coord3.getCoords() + ',' + coord4.getCoords();
+        System.out.println(coords);
         return coords;
     }
 }
