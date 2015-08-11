@@ -11,4 +11,11 @@ public class Point {
         x = xx;
         y = yy;
     }
+
+    public String getCoords() {
+        String xStr = Double.toString(x);
+        String yStr = Double.toString(y);
+        String coordStr = '(' + xStr + ", " + yStr +')';
+        return coordStr;
+    }
 }
