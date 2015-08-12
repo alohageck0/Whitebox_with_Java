@@ -23,5 +23,10 @@ public class MyArrays {
         if (Arrays.equals(titles, titles2)) {
             System.out.println("Arrays are equal");
         }
+        String palindrome = "Madam I am Adam";
+        String[] words = palindrome.split(" ");
+        for (int i = 0; i < words.length; i++) {
+            System.out.println(words[i]);
+        }
     }
 }
