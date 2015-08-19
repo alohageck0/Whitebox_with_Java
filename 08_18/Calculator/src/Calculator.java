@@ -8,4 +8,8 @@ public class Calculator {
     public void add(int a) {
         result += a;
     }
+
+    public int getResult() {
+        return result;
+    }
 }
