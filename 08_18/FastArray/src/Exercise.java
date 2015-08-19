@@ -13,5 +13,6 @@ public class Exercise {
             }
         }
         System.out.println(langsH);
+        System.out.println(langsH.size());
     }
 }
