@@ -13,6 +13,7 @@ public class Exercise {
             }
         }
         System.out.println(langsH);
-        System.out.println(langsH.size());
+        System.out.println("Number of unique words " + langsH.size());
+        System.out.println("Number of repeated words " + (langs.length - (langsH.size() - 1)));
     }
 }
