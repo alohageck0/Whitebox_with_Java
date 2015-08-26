@@ -8,11 +8,10 @@ import org.junit.runner.RunWith;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(JUnitParamsRunner.class)
-public class FinalDDT {
-    public Calculator calculator;
 
-    @FileParameters(value = "file:/Users/royalfiish/IdeaProjects/Mango/data.csv",
-            mapper = CsvWithHeaderMapper.class)
+public class FinalDDT {
+    private Calculator calculator;
+
     @Before
     public void setup() {
         calculator = new Calculator();
@@ -20,21 +19,24 @@ public class FinalDDT {
     }
 
     @Test
-    public void Final(String x, String operand, String y, String Expected) {
+    @FileParameters(value = "file:/Users/royalfiish/IdeaProjects/Mango/data.csv",
+            mapper = CsvWithHeaderMapper.class)
 
+
+    public void Final(int x, String operand, int y, int Expected) {
+
+        calculator.add(x);
         switch (operand) {
             case "+":
-                calculator.add(x);
                 calculator.add(y);
-                assertEquals(Expected, calculator.getResult());
+                break;
             case "-":
-                calculator.add(x);
                 calculator.subtract(y);
-                assertEquals(Expected, calculator.getResult());
+                break;
             case "*":
-                calculator.add(x);
                 calculator.multiply(y);
-                assertEquals("Multiplication 10x4", Expected, calculator.getResult());
+                break;
         }
+        assertEquals(Expected, calculator.getResult());
     }
 }
