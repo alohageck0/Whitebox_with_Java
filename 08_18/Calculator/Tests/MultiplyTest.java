@@ -1,4 +1,3 @@
-import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -10,10 +9,6 @@ public class MultiplyTest {
     @Before
     public void setUp() {
         calculator = new Calculator();
-        calculator.switchON();
-    }
-    @After
-    public void teardown(){
         calculator.switchON();
     }
 
