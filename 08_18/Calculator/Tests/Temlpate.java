@@ -1,3 +1,4 @@
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -15,5 +16,10 @@ public class Temlpate {
     @Test
     public void test2() {
         System.out.println("Test2");
+    }
+
+    @After
+    public void tearDown() {
+        System.out.println("After");
     }
 }

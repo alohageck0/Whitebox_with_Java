@@ -14,7 +14,6 @@ public class RealInitialTest {
 
     @Test
     public void testAdd() {
-
         calculator.add(1);
         calculator.add(1);
         assertEquals(2, calculator.getResult());
