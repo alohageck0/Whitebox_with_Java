@@ -1,8 +1,7 @@
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 public class MultiplyTest {
     private Calculator calculator;
@@ -26,5 +25,7 @@ public class MultiplyTest {
         calculator.multiply(4);
         assertTrue("Multiplication 10x4", 40 == calculator.getResult());
         assertTrue(true);
+        //fail();
+        assertNull(calculator);
     }
 }
