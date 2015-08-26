@@ -12,4 +12,8 @@ public class Calculator {
     public int getResult() {
         return result;
     }
+
+    public void subtract(int a) {
+        result -= a;
+    }
 }
