@@ -6,6 +6,9 @@ import static org.junit.Assert.assertEquals;
 
 public class RealInitialTest {
     public Calculator calculator;
+    public int x;
+    public int y;
+    public int Expected;
 
     @Before
     public void setup() {
@@ -14,10 +17,10 @@ public class RealInitialTest {
     }
 
     @Test
-    public void testAdd() {
-        calculator.add(1);
-        calculator.add(1);
-        assertEquals(2, calculator.getResult());
+    public void testAdd(int x, int y, int Expected) {
+        calculator.add(x);
+        calculator.add(y);
+        assertEquals(Expected, calculator.getResult());
     }
 
     @Test
@@ -25,6 +28,12 @@ public class RealInitialTest {
         calculator.add(-1);
         calculator.add(-4);
         assertEquals(-5, calculator.getResult());
+    }
+
+    public void testMult() {
+        calculator.add(10);
+        calculator.multiply(4);
+        assertEquals("Multiplication 10x4", 40, calculator.getResult());
     }
 
     @Ignore
