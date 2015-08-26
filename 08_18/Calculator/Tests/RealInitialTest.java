@@ -1,4 +1,5 @@
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -24,6 +25,12 @@ public class RealInitialTest {
         calculator.add(-1);
         calculator.add(-4);
         assertEquals(-5, calculator.getResult());
+    }
+
+    @Ignore
+    @Test
+    public void testMultiply() {
+//        assertEquals(5, 5);
     }
 
 }

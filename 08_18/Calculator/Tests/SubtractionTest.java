@@ -15,7 +15,7 @@ public class SubtractionTest {
     @Test
     public void testSub() {
         calculator.add(100);
-        calculator.subtract(1);
-        assertEquals(99, calculator.getResult());
+        calculator.subtract(15);
+        assertEquals(85, calculator.getResult());
     }
 }

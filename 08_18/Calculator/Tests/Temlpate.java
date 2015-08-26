@@ -1,8 +1,16 @@
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.*;
 
 public class Temlpate {
+    @BeforeClass
+    public static void oneTimeSetUp() {
+        System.out.println("BeforeClass");
+    }
+
+    @AfterClass
+    public static void oneTimeTeardown() {
+        System.out.println("AfterClass");
+    }
+
     @Before
     public void setUp() {
         System.out.println("Before");
