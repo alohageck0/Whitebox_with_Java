@@ -8,7 +8,7 @@ public class RealInitialTest {
 
     @Before
     public void setup() {
-        Calculator calculator = new Calculator();
+        calculator = new Calculator();
         calculator.switchON();
     }
 
