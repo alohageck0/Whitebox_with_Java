@@ -10,5 +10,9 @@ public class Hamcrest {
         assertThat("Some test ", sum, equalTo(2));
         assertThat(sum, is(not(3)));
         assertThat(sum, greaterThan(0));
+
+        String string = "I like whitebox testing";
+        assertThat(string, containsString("white"));
+
     }
 }
