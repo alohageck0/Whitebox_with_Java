@@ -36,10 +36,5 @@ public class RealInitialTest {
         assertEquals("Multiplication 10x4", 40, calculator.getResult());
     }
 
-    @Ignore
-    @Test
-    public void testMultiply() {
-//        assertEquals(5, 5);
-    }
 
 }
