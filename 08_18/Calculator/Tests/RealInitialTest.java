@@ -16,12 +16,12 @@ public class RealInitialTest {
         calculator.switchON();
     }
 
-    @Test
-    public void testAdd(int x, int y, int Expected) {
-        calculator.add(x);
-        calculator.add(y);
-        assertEquals(Expected, calculator.getResult());
-    }
+//    @Test
+//    public void testAdd(int x, int y, int Expected) {
+//        calculator.add(x);
+//        calculator.add(y);
+//        assertEquals(Expected, calculator.getResult());
+//    }
 
     @Test
     public void testAdd2() {
