@@ -13,6 +13,6 @@ public class BetterArray {
         String name = names.get(1);
         System.out.println(name);
         System.out.println(names.size());
-        System.out.println(names.size());
+//        System.out.println(names.size());
     }
 }
