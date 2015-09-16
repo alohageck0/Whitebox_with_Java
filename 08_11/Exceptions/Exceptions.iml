@@ -8,5 +8,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="Packages" />
+    <orderEntry type="library" name="Spring" level="project" />
   </component>
 </module>
