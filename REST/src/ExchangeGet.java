@@ -3,7 +3,9 @@ import org.junit.Test;
 import org.springframework.http.*;
 import org.springframework.web.client.RestTemplate;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 import static org.springframework.http.MediaType.*;
 
@@ -25,6 +27,10 @@ public class ExchangeGet {
 
         ResponseEntity<String> response = restTemplate.exchange(url, HttpMethod.GET, requestEntity, String.class);
         String body = response.getBody();
-        System.out.println("Body " + body);
+        System.out.println("Body: " + body);
+        MediaType contentType = response.getHeaders().getContentType();
+        System.out.println("Content type: " + contentType);
+        Long contentLength = response.getHeaders().getContentLength();
+        System.out.println(contentLength);
     }
 }
