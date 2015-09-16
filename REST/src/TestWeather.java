@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 import org.springframework.web.client.RestTemplate;
 
 @RunWith(JUnitParamsRunner.class)
-public class TestSF {
+public class TestWeather {
     @Test
     @FileParameters(value = "file:/Users/royalfiish/IdeaProjects/Mango/cities.csv",
             mapper = CsvWithHeaderMapper.class)
