@@ -30,7 +30,8 @@ public class ExchangeGet {
         System.out.println("Body: " + body);
         MediaType contentType = response.getHeaders().getContentType();
         System.out.println("Content type: " + contentType);
-        Long contentLength = response.getHeaders().getContentLength();
-        System.out.println(contentLength);
+
+        String allHeaders = response.getHeaders().toString();
+        System.out.println(allHeaders);
     }
 }
