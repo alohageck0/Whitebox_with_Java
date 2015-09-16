@@ -9,7 +9,7 @@ import static org.springframework.http.MediaType.*;
 
 public class ExchangeGet {
     private RestTemplate restTemplate;
-    private String url = "http://jsonview.com/example.json";
+    private String url = "http://api.openweathermap.org/data/2.5/weather?q=Denver";
 
     @Before
     public void setUp() {
