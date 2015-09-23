@@ -5,7 +5,7 @@ import org.springframework.web.client.RestTemplate;
 
 import java.util.HashMap;
 
-public class PostWithEntityBody {
+public class PostWithJackson {
     private String url = "http://www.htmlgoon.com/api/POST_JSON_Service.php";
     private RestTemplate restTemplate;
 
@@ -27,12 +27,10 @@ public class PostWithEntityBody {
 
         HttpEntity<HashMap<String, String>> requestEntity = new HttpEntity<HashMap<String, String>>(entityBody, requestHeaders);
         // post for object
-        String result = restTemplate.postForObject(url, requestEntity,String.class);
+        AddressPage result = restTemplate.postForObject(url, requestEntity, AddressPage.class);
 
-        //exchange
-        //ResponseEntity<String> response = restTemplate.exchange(url, HttpMethod.POST, requestEntity, String.class);
-        //System.out.println(response);
-        //System.out.println(result);
+
+        System.out.println(result);
 
     }
 }
