@@ -3,6 +3,7 @@ import org.junit.Test;
 import org.springframework.http.*;
 import org.springframework.web.client.RestTemplate;
 
+import java.util.Arrays;
 import java.util.HashMap;
 
 public class PostWithJackson {
@@ -18,7 +19,8 @@ public class PostWithJackson {
     public void PostWithBody() {
         //specify request headers
         HttpHeaders requestHeaders = new HttpHeaders();
-        requestHeaders.setContentType(MediaType.APPLICATION_JSON);
+        //requestHeaders.setContentType(MediaType.APPLICATION_JSON);
+        requestHeaders.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
         HashMap<String, String> entityBody = new HashMap<>();
         entityBody.put("firstname", "Vlad");
         entityBody.put("lastname", "Tester");
