@@ -25,7 +25,7 @@ public class PostWithJackson {
         entityBody.put("firstname", "Vlad");
         entityBody.put("lastname", "Tester");
         entityBody.put("city", "San Jose");
-        // requestEntity includes both headers and body
+        // requestEntity includes both headers and body test
 
         HttpEntity<HashMap<String, String>> requestEntity = new HttpEntity<HashMap<String, String>>(entityBody, requestHeaders);
         // post for object
