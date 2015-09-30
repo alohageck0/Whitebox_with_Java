@@ -19,5 +19,6 @@
         <jarDirectory url="file://$MODULE_DIR$/../Jackson" recursive="false" />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="JsonSimple" level="project" />
   </component>
 </module>

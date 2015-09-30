@@ -1,3 +1,6 @@
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.http.*;
@@ -36,6 +39,15 @@ public class PostWithJackson {
         MediaType responseHeader = result.getHeaders().getContentType();
         System.out.println("Content-type" + responseHeader);
 
-
+        JSONParser jsonParser = new JSONParser();
+        try {
+            JSONObject jsonObject = (JSONObject) jsonParser.parse(result.getBody());
+            String message = (String) jsonObject.get("message");
+            String status = (String) jsonObject.get("status");
+            System.out.println(message);
+            System.out.println(status);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
     }
 }
