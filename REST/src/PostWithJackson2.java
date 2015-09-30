@@ -34,6 +34,11 @@ public class PostWithJackson2 {
         //System.out.println(responseHeader);
         //System.out.println(response.getBody());
 
-        System.out.println(response.getBody().getStatus());
+        System.out.println(response.getBody().getResults().get(0).getFormattedAddress());
+        System.out.println(response.getBody().getResults().get(0).getPlaceId());
+        System.out.println(response.getBody().getResults().get(0).getAddressComponents().get(5).getLongName());
+        System.out.println(response.getBody().getResults().get(0).getGeometry().getViewport().getNortheast().getLat());
+
+
     }
 }
