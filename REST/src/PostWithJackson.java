@@ -29,10 +29,13 @@ public class PostWithJackson {
 
         HttpEntity<HashMap<String, String>> requestEntity = new HttpEntity<HashMap<String, String>>(entityBody, requestHeaders);
         // post for object
-        AddressPage result = restTemplate.postForObject(url, requestEntity, AddressPage.class);
+        ResponseEntity<String> result = restTemplate.exchange(url, HttpMethod.POST, requestEntity, String.class);
 
 
-        System.out.println(result);
+        System.out.println(result.getBody());
+        MediaType responseHeader = result.getHeaders().getContentType();
+        System.out.println("Content-type" + responseHeader);
+
 
     }
 }
