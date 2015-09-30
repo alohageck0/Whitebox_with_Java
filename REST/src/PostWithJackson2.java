@@ -28,9 +28,12 @@ public class PostWithJackson2 {
         httpHeaders.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
         //HttpEntity<HashMap<String, String>> requestEntity = new HttpEntity<HashMap<String, String>>(vars, httpHeaders);
         HttpEntity<String> requestEntity = new HttpEntity<>(httpHeaders);
-        ResponseEntity<String> response = restTemplate.exchange(url, HttpMethod.POST, requestEntity, String.class, vars);
+        ResponseEntity<geocoderesponsepage> response = restTemplate.exchange(url, HttpMethod.POST, requestEntity, geocoderesponsepage.class, vars);
 
         MediaType responseHeader = response.getHeaders().getContentType();
-        System.out.println(responseHeader);
+        //System.out.println(responseHeader);
+        //System.out.println(response.getBody());
+
+        System.out.println(response.getBody().getStatus());
     }
 }
